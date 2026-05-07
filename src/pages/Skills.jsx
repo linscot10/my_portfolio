@@ -10,7 +10,7 @@ import Django from './../assets/django.png'
 
 const Skills = () => {
   return (
-    <div id='Skills' className=' pt-10 bg-gray-50'>
+    <div id='Skills' className=' pt-10 bg-gray-50 pb-6'>
     <div className=' '>
         <h1 className='text-3xl mx-4 pt-8 px-10'>Tech Stack</h1><hr className='  bg-gray-900  m-4 mx-12 mt-6 border-[1px] '/>
  <div>
