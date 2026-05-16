@@ -4,7 +4,7 @@ import Portfolio from './../assets/Portfolio.png'
 import Card from '../components/Card'
 const projects =[
   {
-    image:{Portfolio},
+    image:Portfolio,
     period:"April 2026-May 2026",
     name:'Portfolio Project',
     description:" A free and simple unofficial Google Translate API that supports 108 languages with no API key required. ",
@@ -12,7 +12,7 @@ const projects =[
     link:"#link"
   },
   {
-    image:{Image_1},
+    image:Image_1,
     period:"August 2025-October 2025",
     name:'Bankist Web',
     description:" A free and simple unofficial Google Translate API that supports 108 languages with no API key required. ",
@@ -20,19 +20,11 @@ const projects =[
     link:"#link"
   },
   {
-    image:{Image_1},
+    image:Image_1,
     period:"August 2025-October 2025",
     name:'Bankist Web',
     description:" A free and simple unofficial Google Translate API that supports 108 languages with no API key required. ",
-    tech:["React.js","Tailwind"],
-    link:"#link"
-  },
-  {
-    image:{Image_1},
-    period:"August 2025-October 2025",
-    name:'Bankist Web',
-    description:" A free and simple unofficial Google Translate API that supports 108 languages with no API key required. ",
-    tech:["React.js","Tailwind"],
+    tech:["React.js","Tailwind", "python"],
     link:"#link"
   },
 ]
