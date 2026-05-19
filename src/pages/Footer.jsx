@@ -28,9 +28,9 @@ const Footer = () => {
       <div className='w-1/3 flex items-center justify-center gap-2 flex-col'>
         <h3 className='text-xl my-2'>Connect</h3>
         <ul  className='flex items-center justify-center gap-1'>
-          <li className=' text-gray-700   pt-2 '><a href='#'><FontAwesomeIcon className='text-black w-6  h-6' icon={faGithub} /></a></li>
-                      <li className=' text-gray-700  pt-2'><a href='#'><FontAwesomeIcon className='text-blue-600 w-6 h-6' icon={faLinkedin} /></a></li>
-                      <li className=' text-gray-700  pt-2'><a href='#'><FontAwesomeIcon icon={faEnvelope} className='text-black w-6 h-6' /></a></li>
+          <li className=' text-gray-700   pt-2 '><a href='https://github.com/linscot10' target="_blank"><FontAwesomeIcon className='text-black w-6  h-6' icon={faGithub} /></a></li>
+                      <li className=' text-gray-700  pt-2'><a href='https://www.linkedin.com/in/lawrence-scott-osuru/' target="_blank"><FontAwesomeIcon className='text-blue-600 w-6 h-6' icon={faLinkedin} /></a></li>
+                      <li className=' text-gray-700  pt-2'><a href='mailto:osurulawrence@gmail.com'><FontAwesomeIcon icon={faEnvelope} className='text-black w-6 h-6' /></a></li>
         </ul>
       </div>
       <div>
