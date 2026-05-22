@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faPaperPlane} from  '@fortawesome/free-solid-svg-icons'
 import { faGithub,faLinkedin,faInstagram } from '@fortawesome/free-brands-svg-icons'
+import emailjs from "@emailjs/browser"
 const Contact = () => {
   const [formData, setFormData]= useState({
     name:"",
@@ -9,6 +10,7 @@ const Contact = () => {
     subject:"",
     message:""
   })
+  const [status,setStatus]=useState("")
 
   const [loading, setLoading]= useState(false)
   const handleChange=(e)=>{
@@ -19,6 +21,32 @@ const Contact = () => {
 
   const handleSubmit=(e)=>{
     e.preventDefault()
+setLoading(true)
+    emailjs.send(
+      "service_a912t0l",
+      "template_0yzhdxm",
+      formData,
+      "x5-ggJIsrHoNfW-gl"
+    ).then(
+      
+      (response)=>{
+        console.log("SUCCESS!", response.status, response.text)
+        setStatus("Message sent successfully!")
+        setLoading(false); 
+        setFormData({
+           name:"",
+    email:"",
+    subject:"",
+    message:""
+        })
+        
+      },
+        (err) => {
+          console.log("FAILED...", err);
+          setLoading(false);
+          setStatus("Failed to send message. Please try again later.");
+        }
+    )
 
     setLoading(true)
   }
@@ -61,6 +89,7 @@ const Contact = () => {
   Send Message
   </>
   )}</button>
+     {status && <p>{status}</p>}
     </form>
     </div>
     </div>    
