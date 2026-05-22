@@ -9,6 +9,8 @@ const Contact = () => {
     subject:"",
     message:""
   })
+
+  const [loading, setLoading]= useState(false)
   const handleChange=(e)=>{
     setFormData({
       ...formData,[e.target.name]:e.target.value
@@ -17,6 +19,8 @@ const Contact = () => {
 
   const handleSubmit=(e)=>{
     e.preventDefault()
+
+    setLoading(true)
   }
   return (
     <div id='Contact' className=' mr-6 flex flex-col justify-center gap-5 items-center py-5  mt-5'>
@@ -51,7 +55,12 @@ const Contact = () => {
     <label  className='mt-7'>Message</label>
     <textarea name='message' onChange={handleChange} value={formData.message} required placeholder='Tell me more...' width='300' height='300' className='rounded-lg p-2 border-[2px]  focus:outline-none focus:border-gray-400 border-gray-100 '></textarea>
 </div>
-<button type='Submit' className='mt-7 bg-mint-200 py-4 px-3 hover:bg-mint-300 rounded-lg text-white '><FontAwesomeIcon icon={faPaperPlane} className='text-gray-400 mr-2 ' />Send Message</button>
+<button type='Submit' className='mt-7 bg-mint-200 py-4 px-3 hover:bg-mint-300 rounded-lg text-white '>{loading?("Loading..."):(
+  <>
+  <FontAwesomeIcon icon={faPaperPlane} className='text-gray-400 mr-2 ' />
+  Send Message
+  </>
+  )}</button>
     </form>
     </div>
     </div>    
