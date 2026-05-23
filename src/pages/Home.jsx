@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import image from './../assets/hero.svg'
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import myResume from './../assets/osuru lawrence CV.pdf (1).pdf'
 
 const Home = () => {
   return (
@@ -20,8 +21,9 @@ const Home = () => {
             <li className=' text-gray-700  hover:text-black pt-3'><a href='#'><FontAwesomeIcon className='text-red-600 w-8 h-8' icon={faInstagram} /></a></li>
           </ul>
 
-          <button className='bg-green-400 w-32 h-12 hover:bg-green-600 rounded-md'>Download CV</button>
-        </div>
+          <a href={myResume} download='resume.pdf'><button className='bg-green-400 w-32 h-12 hover:bg-green-600 rounded-md'>Download CV</button>
+       </a> 
+          </div>
 
         <div className='flex justify-start  mx-15 w-1/2  '>
           <img className='text-xl ' src={image} width='400' />
