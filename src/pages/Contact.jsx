@@ -53,8 +53,8 @@ setLoading(true)
   return (
     <div id='Contact' className=' mr-6 flex flex-col justify-center gap-5 items-center py-5  mt-5'>
     <h1 className='text-3xl p-5'>Contact Me</h1>
-    <div className=' flex gap-4 justify-center w-3/4 px-5'>
-    <div className=' p-7 m-3 ml-2 w-1/2'>
+    <div className=' bg-red-200 flex md:flex-row flex-col gap-4 justify-center w-full lg:w-3/4  px-5'>
+    <div className=' bg-red-500 p-7 m-3 ml-2 w-full md:w-1/2'>
     {/* <h2> Get In Touch</h2> */}
     <h1 className='text-4xl '>Let’s build something</h1>
     <h1 className='text-4xl text-blue-500'>great</h1><hr className='w-20 h-1 bg-gray-900  mt-1 border-[2px] ml-4'/>
@@ -66,15 +66,15 @@ setLoading(true)
     <a href='#' className='group p-4 mt-4 hover:shadow-lg bg-gray-100 hover:border-[1px] hover:border-gray-600 border-[1px] border-gray-200 rounded-lg'><div className='flex flex-row  gap-4'><div  className='bg-white w-16 rounded-md shadow-lg text-2xl flex justify-center items-center h-12 '><FontAwesomeIcon className='text-red-600 group-hover:w-6 group-hover:h-12' icon={faInstagram} /></div> <div><h2 className='text-xl'>Instagram</h2><p>github.com/linscot10</p></div></div></a>
     </div>
     </div>
-    <div className=' shadow-lg bg-gray-100 rounded-lg flex justify-center items-center  p-7 m-3 w-1/2'>
+    <div className=' bg-red-500 shadow-lg bg-gray-100 rounded-lg flex justify-center items-center p-3 md:p-7 m-3 w-full md:w-1/2'>
     <form onSubmit={handleSubmit}>
-    <div className='flex gap-4 '>
-    <label className='flex flex-col '>Name
-    <input name='name' onChange={handleChange} value={formData.name} required  type='text' placeholder='Your name' className='rounded-lg p-2 border-[2px] focus:outline-none  focus:border-gray-400 border-gray-100 '/>
-    </label>
-    <label className='flex flex-col'>Email
-    <input name='email' onChange={handleChange} value={formData.email} required type='email' placeholder='you@example.com' className='rounded-lg p-2  border-[2px]  focus:outline-none focus:border-gray-400 border-gray-100 '/>
-    </label>
+    <div className=' flex-col  flex lg:flex-row  gap-4 '>
+      <label className='flex flex-col '>Name
+      <input name='name' onChange={handleChange} value={formData.name} required  type='text' placeholder='Your name' className='rounded-lg p-2 border-[2px] focus:outline-none  focus:border-gray-400 border-gray-100 '/>
+      </label>
+      <label className='flex flex-col'>Email
+      <input name='email' onChange={handleChange} value={formData.email} required type='email' placeholder='you@example.com' className='rounded-lg p-2  border-[2px]  focus:outline-none focus:border-gray-400 border-gray-100 '/>
+      </label>
     </div>
 <div className='flex flex-col mt-7'>
 

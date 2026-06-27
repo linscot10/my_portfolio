@@ -31,9 +31,9 @@ const projects =[
 
 const Projects = () => {
   return (
-    <div className="flex justify-center flex-col  items-center m-7 p-4 h-screen ">
+    <div className="flex justify-center flex-col  items-center m-7 p-4 min-h-screen ">
         <h1 className=" text-4xl p-3 ">Projects</h1>
-      <div className="flex gap-4 justify-center items-center p-5 ">
+      <div className=" flex placeitems-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center p-5 ">
         {/* <div className="flex   bg-gray-300  flex-col p-3 py-2 m-2 rounded-lg hover:border-gray-400 hover:border-[2px] shadow-lg h-[460px]  w-[300px]">
           <div className=" w-3/4 rounded-lg"><img src={Portfolio} alt="images" className=" rounded-lg" /></div>
           <p className=' text-gray-400'><strong className='text-black'>Period:</strong> <span>April 2026-May2026</span></p>
